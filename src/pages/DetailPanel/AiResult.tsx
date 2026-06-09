@@ -383,7 +383,11 @@ const AiResult: React.FC<AiResultProps> = ({ tabId, taskId, nodeState, showOnly,
       {tabId === 'aiMedical' && (!showOnly) && (
         <>
           <div style={{ marginBottom: 16 }}>
-            <SectionTitle label="• 理赔记录" isFirst />
+            <SectionTitle label="• 思考过程" isFirst />
+            <ThoughtProcess text={data.thoughtProcess} />
+          </div>
+          <div style={{ marginBottom: 16 }}>
+            <SectionTitle label="• 理赔记录" />
             {data.claimRecords && data.claimRecords.length > 0
               ? data.claimRecords.map((rec: any, j: number) => (
                 <div key={j} style={{ fontSize: 12, color: '#666', marginBottom: 6 }}>
@@ -411,7 +415,11 @@ const AiResult: React.FC<AiResultProps> = ({ tabId, taskId, nodeState, showOnly,
       {tabId === 'emScore' && (!showOnly) && (
         <div>
           <div style={{ marginBottom: 16 }}>
-            <SectionTitle label="• 评分结果" isFirst />
+            <SectionTitle label="• 思考过程" isFirst />
+            <ThoughtProcess text={data.thoughtProcess} />
+          </div>
+          <div>
+            <SectionTitle label="• 评分结果" />
             {data.products && data.products.length > 0
               ? data.products.map((ep: any, q: number) => (
                 <div key={q} style={{

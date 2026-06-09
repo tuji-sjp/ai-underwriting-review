@@ -230,17 +230,17 @@ const DetailPanel: React.FC<DetailPanelProps> = ({ row, onClose, onOpenPreview }
                       <div key={col.key} style={{ display: activeCols[tab.key] === col.key ? 'block' : 'none' }}>
                         {col.key === 'claim' && (
                           <>
-                            <ImageGallery imgType="claim" taskId={row.taskId} ecmState={nodeStates['ecm_claim']} tabId={tab.key} sectionType="new" rePool={row.rePool} nodeStates={nodeStates} onOpenPreview={onOpenPreview} />
+                            <ImageGallery imgType="claim" taskId={row.taskId} ecmState={nodeStates['ecm_claim']} tabId={tab.key} sectionType="new" nodeStates={nodeStates} onOpenPreview={onOpenPreview} />
                             {tab.key !== 'aiMedical' && (
-                              <ImageGallery imgType="claim" taskId={row.taskId} ecmState={nodeStates['ecm_claim']} tabId={tab.key} sectionType="history" rePool={row.rePool} nodeStates={nodeStates} onOpenPreview={onOpenPreview} />
+                              <ImageGallery imgType="claim" taskId={row.taskId} ecmState={nodeStates['ecm_claim']} tabId={tab.key} sectionType="history" nodeStates={nodeStates} onOpenPreview={onOpenPreview} />
                             )}
                           </>
                         )}
                         {col.key === 'ins' && (
                           <>
-                            <ImageGallery imgType="ins" taskId={row.taskId} ecmState={nodeStates['ecm_ins']} tabId={tab.key} sectionType="new" rePool={row.rePool} nodeStates={nodeStates} onOpenPreview={onOpenPreview} />
+                            <ImageGallery imgType="ins" taskId={row.taskId} ecmState={nodeStates['ecm_ins']} tabId={tab.key} sectionType="new" nodeStates={nodeStates} onOpenPreview={onOpenPreview} />
                             {tab.key !== 'aiMedical' && (
-                              <ImageGallery imgType="ins" taskId={row.taskId} ecmState={nodeStates['ecm_ins']} tabId={tab.key} sectionType="history" rePool={row.rePool} nodeStates={nodeStates} onOpenPreview={onOpenPreview} />
+                              <ImageGallery imgType="ins" taskId={row.taskId} ecmState={nodeStates['ecm_ins']} tabId={tab.key} sectionType="history" nodeStates={nodeStates} onOpenPreview={onOpenPreview} />
                             )}
                           </>
                         )}

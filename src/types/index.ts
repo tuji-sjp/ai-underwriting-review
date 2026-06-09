@@ -77,6 +77,16 @@ export interface EmScoreData {
 
 export type ImageData = Record<string, Record<string, number>>;
 
+export interface HistoryImageGroup {
+  label: string;
+  images: Record<string, number>;
+}
+
+export type HistoryImageData = Record<string, Record<string, {
+  claim: HistoryImageGroup[];
+  ins: HistoryImageGroup[];
+}>>;
+
 export interface ImgCategory {
   cat: string;
   index: number;
