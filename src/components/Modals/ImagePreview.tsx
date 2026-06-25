@@ -110,7 +110,7 @@ const ImagePreview: React.FC<ImagePreviewProps> = ({
             )}
             {/* Input area at bottom */}
             <div style={{ padding: '12px 16px 16px', borderTop: '1px solid #f0f0f0', background: '#fafbfc' }}>
-              <div style={{ fontSize: 14, fontWeight: 600, color: '#333', marginBottom: 8 }}>请输入人工纠正后的疾病：</div>
+              <div style={{ fontSize: 14, fontWeight: 600, color: '#333', marginBottom: 8 }}>请输入人工纠正的疾病：</div>
               <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
                 <input
                   type="text"
