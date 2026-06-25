@@ -38,7 +38,7 @@ src/
 ├── types/
 │   └── index.ts                 # TypeScript 类型定义
 ├── data/
-│   └── mockData.ts              # 全部 mock 数据（任务列表、疾病映射、AI分析、人工结论、EM评分）
+│   └── mockData.ts              # 全部 mock 数据（任务列表、疾病映射[OCR_DISEASES/ALIAS_MAPPED_DISEASES/AI_JUDGE_DISEASES]、AI分析、人工结论、EM评分）
 ├── components/
 │   ├── Layout/
 │   │   ├── Sidebar.tsx          # 左侧面板：筛选条件 + 任务列表
@@ -49,7 +49,7 @@ src/
 │   │   └── DataTable.tsx        # 数据表格 + 分页 + 结果导出按钮
 │   └── Modals/
 │       ├── ExportModal.tsx      # 导出弹窗
-│       └── ImagePreview.tsx     # 影像预览
+│       └── ImagePreview.tsx     # 影像预览（三栏布局：图片 + OCR文本与人工纠正输入框 + AI/人工疾病汇总结果）
 └── pages/
     └── DetailPanel/
         ├── DetailPanel.tsx      # 详情面板主组件
